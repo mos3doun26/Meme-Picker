@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meme Picker</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<header>
+		<div class="header-inner">
+			<img class="pumpkin-img" src="./images/pumpkin.png" alt="pumpkin's img">
+			<div>
+				<h2>Pumpkin's Purrect...</h2>
+				<h1>Meme Picker</h1>
+				</p>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h3>Select Your Current Emotion</h3>
+		<div class="controls-contianer">
+			<div class="emotion-radios" id="emotion-radios"></div>
+			<div class="gifs-check">
+				<label for="gifs-only-option">Animated GIFs only</label>
+				<input type="checkbox" id="gifs-only-option">
+			</div>
+			<button class="get-img-btn" id="get-img-btn">Get Image</button>
+		</div>
+	</main>
+	<div class="meme-modal" id="meme-modal">
+		<button class="meme-modal-close-btn" id="meme-modal-close-btn">X</button>
+		<div class="meme-modal-inner " id="meme-modal-inner"></div>
+	</div>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>

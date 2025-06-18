@@ -1,0 +1,135 @@
+html,
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*typography*/
+
+h1,
+h2 {
+    color: #dfc7c6;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+/* layout */
+
+header {
+    background-color: #67595e;
+    padding-top: 10px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.pumpkin-img {
+    width: 100px;
+}
+
+main {
+    /* width: 50%; */
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+/* controls */
+.controls-contianer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.emotion-radios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+}
+
+.emotion-radios>.radio-option-container:last-child {
+    border-bottom: none;
+}
+
+.radio-option-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #c3c3c3;
+
+}
+
+.highlight {
+    accent-color: red;
+    color: #bd301d;
+    background-color: #fff0ee;
+    font-weight: 900;
+}
+
+.get-img-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #67595e;
+    color: #dfc7c6;
+    font-size: 1.5rem;
+}
+
+/* modal */
+
+.meme-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    background-color: #fff0ee;
+    border-radius: 5px;
+    border: 2px solid #999392;
+    text-align: center;
+}
+
+.meme-modal-close-btn {
+    margin: 10px 10px 0 auto;
+    border-radius: 5px;
+    border: 1px solid #999392;
+    padding: 5px;
+}
+
+.meme-img {
+    margin: 20px 40px;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.meme-modal p {
+    margin-bottom: 20px;
+}
