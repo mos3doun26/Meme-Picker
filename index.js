@@ -5,6 +5,7 @@ const getImgBtn = document.getElementById('get-img-btn')
 const modal = document.getElementById('meme-modal')
 const modalInner = document.getElementById('meme-modal-inner')
 const modalCloseBtn = document.getElementById('meme-modal-close-btn')
+const modalOverlayer = document.getElementById('meme-modal-overlayer')
 
 getImgBtn.addEventListener('click', renderSelectedMeme)
 modalCloseBtn.addEventListener('click', closeModal)
@@ -28,12 +29,12 @@ function renderSelectedMeme() {
         <img class="meme-img" id="meme-img" src="./images/${selectedCat.image}">
         <p>${selectedCat.alt}</p>`
 
-    modal.style.display = "flex"
+    modalOverlayer.style.display = "block"
 
 }
 
 function closeModal() {
-    modal.style.display = 'none'
+    modalOverlayer.style.display = 'none'
 }
 
 function getSingleCatObject() {
@@ -87,19 +88,12 @@ function renderEmotionTags(cats) {
     emotionRadios.innerHTML = emotionRadiosHTML
 }
 
-
 renderEmotionTags(catsData)
-
 
 document.addEventListener("click", clickOutsideModalToClose)
 
 function clickOutsideModalToClose(e) {
-    const clickedEl = document.getElementById(e.target.id)
-
-    if (modal.style.display === "flex") {
-
-        if (e.target === document.querySelector('main')) {
-            closeModal()
-        }
+    if (modalOverlayer.style.display === "block" && e.target === document.getElementById('meme-modal-overlayer')) {
+        closeModal()
     }
 }
