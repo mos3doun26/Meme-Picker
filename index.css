@@ -132,7 +132,7 @@ main {
 .meme-modal-close-btn:focus {
     background-color: #bd301d;
     color: #fff;
-    box-shadow: 1px 1px 5px rgb(110, 176, 230);
+    box-shadow: 1px 1px 5px #6eb0e6;
 }
 
 
