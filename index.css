@@ -123,6 +123,20 @@ main {
     padding: 5px;
 }
 
+.meme-modal-close-btn:hover {
+    background-color: #bd301d;
+    color: #fff;
+}
+
+.meme-modal-close-btn:active,
+.meme-modal-close-btn:focus {
+    background-color: #bd301d;
+    color: #fff;
+    box-shadow: 1px 1px 5px rgb(110, 176, 230);
+}
+
+
+
 .meme-img {
     margin: 20px 40px;
     border-radius: 5px;
