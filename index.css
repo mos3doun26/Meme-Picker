@@ -55,6 +55,7 @@ main {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    height: 100vh;
 }
 
 /* controls */
@@ -130,6 +131,8 @@ input {
     border-radius: 5px;
     border: 2px solid #999392;
     text-align: center;
+    width: 450px;
+    height: 450px;
 }
 
 .meme-modal-close-btn {

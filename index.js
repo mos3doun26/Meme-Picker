@@ -89,3 +89,17 @@ function renderEmotionTags(cats) {
 
 
 renderEmotionTags(catsData)
+
+
+document.addEventListener("click", clickOutsideModalToClose)
+
+function clickOutsideModalToClose(e) {
+    const clickedEl = document.getElementById(e.target.id)
+
+    if (modal.style.display === "flex") {
+
+        if (e.target === document.querySelector('main')) {
+            closeModal()
+        }
+    }
+}
