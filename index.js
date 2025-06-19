@@ -1,6 +1,5 @@
 import { catsData } from "./data.js";
 
-
 const emotionRadios = document.getElementById('emotion-radios')
 const getImgBtn = document.getElementById('get-img-btn')
 const modal = document.getElementById('meme-modal')

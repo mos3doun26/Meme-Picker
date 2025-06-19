@@ -79,10 +79,20 @@ main {
 
 .radio-option-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 5px 10px;
     border-bottom: 1px solid #c3c3c3;
 
+}
+
+.radio-option-container>label,
+input {
+    cursor: pointer;
+}
+
+.radio-option-container>label {
+    width: 100%;
+    text-align: start;
 }
 
 .highlight {
